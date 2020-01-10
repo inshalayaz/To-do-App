@@ -8,7 +8,7 @@ ourForm.addEventListener('submit',(e) => {
     if (newInput.value !== ""){
     newContent(newInput.value);  
     }else{
-        alert ("Please enter something to do");
+        alert ("Please enter something to do.");
     }
 })
 
