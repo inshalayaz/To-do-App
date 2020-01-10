@@ -8,6 +8,8 @@ ourForm.addEventListener('submit',(e) => {
 })
 
 function newContent(x){
-    let ourHtml = `<li> <button>delete</button> </li>`
-    to_do_list.insertAdjacentHTML('beforeend',+ ourHtml);
+    let ourHtml = `<li> ${x} <button onClick = 'delFunction'>delete</button> </li>`
+    to_do_list.insertAdjacentHTML('beforeend', ourHtml);
+    newInput.value = "";
+    newInput.focus();
 }
