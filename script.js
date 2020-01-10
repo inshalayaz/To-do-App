@@ -5,7 +5,11 @@ let to_do_list = document.getElementById("todo-list")
 
 ourForm.addEventListener('submit',(e) => {
     e.preventDefault();
+    if (newInput.value !== ""){
     newContent(newInput.value);  
+    }else{
+        alert ("please Enter something todo");
+    }
 })
 
 function newContent(x){
